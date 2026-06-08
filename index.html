@@ -4,6 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>KotoKey</title>
+  <script>
+    (function () {
+      var languages = navigator.languages || [navigator.language || navigator.userLanguage || ""];
+      var isJapanese = languages.some(function (language) {
+        return String(language).toLowerCase().indexOf("ja") === 0;
+      });
+
+      window.location.replace(isJapanese ? "./ja/" : "./en/");
+    }());
+  </script>
   <style>
     body { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; margin: 0; color: #24231f; background: #f5efe3; line-height: 1.7; }
     main { max-width: 720px; margin: 0 auto; padding: 56px 24px; }
@@ -15,11 +25,14 @@
 <body>
   <main>
     <h1>KotoKey</h1>
-    <p>スマホでも、物理キーボードのような心地よい打鍵感を。</p>
+    <p>ブラウザの言語設定に合わせてページを開いています。</p>
     <nav>
       <a href="./ja/">日本語</a>
       <a href="./en/">English</a>
     </nav>
+    <noscript>
+      <p>自動で移動しない場合は、上のリンクから言語を選択してください。</p>
+    </noscript>
   </main>
 </body>
 </html>
