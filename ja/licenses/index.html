@@ -17,7 +17,7 @@
   <main>
     <p class="lang"><a href="../../en/licenses/">English</a></p>
     <h1>ライセンス</h1>
-    <p>最終更新日: 2026年6月12日</p>
+    <p>最終更新日: 2026年6月20日</p>
 
     <p>KotoKeyでは、以下のオープンソースソフトウェアおよびデータを利用しています。</p>
 
@@ -32,15 +32,24 @@
     </ul>
     <p>KotoKeyで使用しているFrequencyWords由来の派生頻度データは、CC BY-SA 4.0の条件に従って利用可能です。この派生頻度データについて、CC BY-SA 4.0で認められる利用を妨げる追加の制限は設けません。派生頻度データの確認を希望される場合は、KotoKeyの問い合わせ窓口までご連絡ください。</p>
 
-    <h2>SudachiDict</h2>
+    <h2>日本語予測変換で利用するソフトウェア</h2>
     <ul>
-      <li>使用内容: 日本語入力機能に関連する辞書データとして利用</li>
-      <li>著作権表示: SudachiDict Copyright (c) 2017-2023 Works Applications Co., Ltd.</li>
-      <li>ライセンス: Apache License 2.0</li>
-      <li>リポジトリ: <a href="https://github.com/WorksApplications/SudachiDict">https://github.com/WorksApplications/SudachiDict</a></li>
-      <li>ライセンスURL: <a href="https://www.apache.org/licenses/LICENSE-2.0">https://www.apache.org/licenses/LICENSE-2.0</a></li>
-      <li>法的表示: <a href="https://github.com/WorksApplications/SudachiDict/blob/develop/LEGAL">https://github.com/WorksApplications/SudachiDict/blob/develop/LEGAL</a></li>
-      <li>利用形態: KotoKeyで利用するためにデータを抽出・変換しています。</li>
+      <li><strong>AzooKeyKanaKanjiConverter</strong>（version 0.11.2）: 日本語かな漢字変換に利用しています。Copyright (c) 2023 Miwa / Ensan。MIT License。<a href="https://github.com/azooKey/AzooKeyKanaKanjiConverter">リポジトリ</a> · <a href="../../en/licenses/texts/mit-azookeykanakanjiconverter.txt">ライセンス全文</a></li>
+      <li><strong>azooKey dictionary storage</strong>: AzooKeyKanaKanjiConverterに同梱される辞書リソースです。Apache License 2.0。<a href="https://github.com/azooKey/AzooKeyKanaKanjiConverter/tree/main/Sources/KanaKanjiConverterModuleWithDefaultDictionary/azooKey_dictionary_storage">ソース</a> · <a href="../../en/licenses/texts/apache-2.0.txt">ライセンス全文</a></li>
+      <li><strong>Jinja</strong>（version 1.1.2）: AzooKeyKanaKanjiConverterが利用しています。Copyright (c) 2024 John Mai。MIT License。<a href="https://github.com/johnmai-dev/Jinja">リポジトリ</a> · <a href="../../en/licenses/texts/mit-jinja.txt">ライセンス全文</a></li>
+      <li><strong>swift-collections</strong>、<strong>swift-algorithms</strong>、<strong>swift-numerics</strong>、<strong>swift-tokenizers</strong>: AzooKeyKanaKanjiConverterが利用する依存パッケージです。Apache License 2.0。<a href="../../en/licenses/texts/apache-2.0.txt">ライセンス全文</a></li>
+    </ul>
+
+    <h2>その他のオープンソースパッケージ</h2>
+    <ul>
+      <li><strong>swift-package-manager-google-mobile-ads</strong> および <strong>swift-package-manager-google-user-messaging-platform</strong>: Google SDKをSwift Package Managerで組み込むために利用しています。Apache License 2.0。<a href="../../en/licenses/texts/apache-2.0.txt">ライセンス全文</a></li>
+    </ul>
+
+    <h2>ライセンス全文</h2>
+    <ul>
+      <li><a href="../../en/licenses/texts/mit-azookeykanakanjiconverter.txt">MIT License — AzooKeyKanaKanjiConverter</a></li>
+      <li><a href="../../en/licenses/texts/mit-jinja.txt">MIT License — Jinja</a></li>
+      <li><a href="../../en/licenses/texts/apache-2.0.txt">Apache License 2.0</a> — azooKey dictionary storage、swift-collections、swift-algorithms、swift-numerics、swift-tokenizers、swift-package-manager-google-mobile-ads、swift-package-manager-google-user-messaging-platformに適用されます。</li>
     </ul>
 
     <p>上記以外のKotoKey本体、デザイン、名称、画像、音声、その他のコンテンツの権利は、別途明示されている場合を除き、開発者または正当な権利者に帰属します。</p>
